@@ -7,7 +7,7 @@ function page() {
   const [color, setColor] = useState("");
 
   const msg1 = "Color name is empty!";
-  const msg2 = "Color name must be under 10 letters!";
+  const msg2 = "Color name must be under 18 letters!";
   const msg3 = "Invalid color name!";
 
   function isValidColor(input) {
@@ -22,7 +22,7 @@ function page() {
 
     if (trimmedColor.length === 0) {
       setBgColorName(msg1);
-    } else if (trimmedColor.length > 10) {
+    } else if (trimmedColor.length > 18) {
       setBgColorName(msg2);
     } else if (!isValidColor(trimmedColor)) {
       setBgColorName(msg3);
@@ -50,7 +50,7 @@ function page() {
       <div className="w-full text-center">
         <h1 className="text-lg font-bold">{bgColorName}</h1>
       </div>
-      <div className="w-full h-20 fixed bottom-5 flex justify-center items-center gap-12 flex-row max-sm:flex-col max-sm:h-auto max-sm:gap-2">
+      <div className="w-full h-20 fixed bottom-5 flex justify-center items-center gap-12 flex-row max-sm:flex-col-reverse max-sm:h-auto max-sm:gap-4 max-sm:bottom-[30dvh]">
         <form
           onSubmit={colorHandler}
           className="w-1/3 max-sm:w-3/4 flex justify-center items-center flow-row"
