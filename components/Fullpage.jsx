@@ -50,7 +50,7 @@ function page() {
       <div className="w-full text-center">
         <h1 className="text-lg font-bold">{bgColorName}</h1>
       </div>
-      <div className="w-full h-20 fixed bottom-5 flex justify-center items-center gap-12 flex-row max-sm:flex-col-reverse max-sm:h-auto max-sm:gap-4 max-sm:bottom-[30dvh]">
+      <div className="w-full h-20 fixed bottom-5 flex justify-center items-center gap-12 flex-row max-sm:flex-col-reverse max-sm:h-auto max-sm:gap-4 max-sm:bottom-[10dvh]">
         <form
           onSubmit={colorHandler}
           className="w-1/3 max-sm:w-3/4 flex justify-center items-center flow-row"
